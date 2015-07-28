@@ -10,6 +10,7 @@ Router.map(function() {
   this.resource("pla", function() {
     this.route("crosswalk");
   });
+  this.route('programs');
 });
 
 export default Router;
