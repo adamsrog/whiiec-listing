@@ -1,0 +1,18 @@
+<li class="list-group-item">
+	<div class="row">
+		<div class="col-md-1">
+			<img src={{occupation.branchImage}} alt={{occupation.branch}} width=75>
+		</div>
+		<div class="col-md-11">
+			<strong><a href={{occupation.url}} target="_blank">{{occupation.title}}</a></strong>
+			{{#if occupation.pdf}}
+				| <small><a href={{occupation.pdf}} target="_blank"><i class="glyphicon glyphicon-file"></i>View PDF</a></small>
+			{{/if}}
+			<span class="pull-right">
+				<span class="badge {{matchBadgeClass}}">{{matchText}}</span>
+			</span><br>
+			<small>{{occupation.id}}</small><br>
+			<small>{{occupation.category}}</small>
+		</div>
+	</div>
+</li>

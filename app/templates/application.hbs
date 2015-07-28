@@ -1,0 +1,31 @@
+<nav class="navbar navbar-default">
+  <div class="container">
+
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      {{#link-to 'pla.index' class="navbar-brand"}}Employer's Military Skill Locator{{/link-to}}
+    </div>
+
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li>{{#link-to 'pla.crosswalk' class="btn-view-occupation"}}Occupations{{/link-to}}</li>
+      </ul>
+    </div>{{!-- /.navbar-collapse --}}
+
+  </div>{{!-- /.container --}}
+</nav>
+
+<div class="container">
+	{{outlet}}
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <p class="text-muted"><strong>Funded by the Department of Labor, Employment and Training Administration, Grant #TC-23745-12-60-A-53.</strong></p>
+  </div>
+</footer>
