@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: 'bcpla',
+    modulePrefix: 'whiiec-listing',
     environment: environment,
     baseURL: '/',
     locationType: 'auto',
