@@ -1,10 +1,10 @@
 <li class="list-group-item">
 	<div class="row">
 		<div class="col-md-1">
-			{{#link-to 'programs' class="btn btn-primary" role="button"}}<i class="fa fa-list-alt"></i>More Info{{/link-to}}
+			{{#link-to 'programs' class="btn btn-primary" role="button"}}{{fa-icon "fa-list-alt" size="lg"}}<br><small>Details</small>{{/link-to}}
 		</div>
 		<div class="col-md-11">
-			<strong>{{program.institution}} - {{program.program}}</strong><br>
+			<strong>{{#link-to 'programs.program' program.id}}{{program.institution}} - {{program.program}}{{/link-to}}</strong><br>
 			{{program.degree_cert}}<br>
 			<small>{{program.location}}. ({{program.instruction_delivery}})</small><br>
 			<small>Duration: {{program.duration}}</small><br>

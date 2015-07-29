@@ -10,7 +10,9 @@ Router.map(function() {
   this.resource("pla", function() {
     this.route("crosswalk");
   });
-  this.route('programs');
+  this.route('programs', function() {
+  	this.route('program', { path: '/:id' });
+  });
   this.route('faq');
 });
 

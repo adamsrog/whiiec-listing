@@ -1,0 +1,61 @@
+<div class="row">
+  <div class="col-md-2">
+    <h3>Programs</h3>
+    <small>Showing {{sortedPrograms.length}} of {{model.length}}</small>
+  </div>
+  <div class="col-md-7">
+    {{#if pagedContent}}
+    	{{page-numbers content=pagedContent}}
+    {{/if}}
+  </div>
+  <div class="col-sm-3">
+    <div class="input-group">
+      {{input value=filterQuery type="text" placeholder="Search by program..." class="search-box form-control"}}
+      <span class="input-group-btn">
+        {{#if filterQuery}}
+        <button class="btn btn-default glyphicon glyphicon-remove" type="button" {{action "clearFilterQuery"}}></button>
+        {{else}}
+        <button class="btn btn-default glyphicon glyphicon-search" type="button"></button>
+        {{/if}}
+      </span>
+    </div> {{!-- /.input-group --}}
+  </div> {{!-- /.col col-sm-3 --}}
+</div>
+
+<div class="row">
+  <div class="col-md-2">
+    <hr style="margin-top: 0px">
+    <h5>
+      <span>Schools</span>
+      {{#if sortCategories}}<button class="pull-right" {{action "clearCategories"}}>x</button>{{/if}}
+    </h5>
+    Schools here..
+  </div>
+  <div class="col-md-10">
+    <ul class="list-group">
+      {{#if pagedContent}}
+    	{{#each pagedContent as |program|}}
+        {{program-row program=program}}
+    	{{/each}}
+      {{else}}
+      <li class="list-group-item">
+        <div class="row">
+          <div class="col-md-12">
+            <p>There are no entries that match your filters and search criteria.</p>
+          </div>
+        </div>
+      </li>
+      {{/if}}
+    </ul>
+  </div>
+</div>
+
+{{#if pagedContent}}
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-7">
+    {{page-numbers content=pagedContent}}
+  </div>
+  <div class="col-sm-3"></div>
+</div>
+{{/if}}

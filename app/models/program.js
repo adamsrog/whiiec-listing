@@ -23,7 +23,7 @@ Program.reopenClass({
 			"degree_cert":"Certificate ",
 			"duration":"15 credits",
 			"cost":"$1,605 ($106.84 per credit) excluding books and fees",
-			"prerequisites":"A background in either an IT-related or Healthcare-related field is strongly recommended.  \n",
+			"prerequisites":"A background in either an IT-related or Healthcare-related field is strongly recommended.",
 			"instruction_delivery":"On-line",
 			"outcomes":"Offers an overview of healthcare, health information technology, and health information management systems for individuals with Healthcare or IT backgrounds who wish to learn more about health information management systems or who are interested in creating a pathway for entering into a Health IT career. The focus is on the role and responsibilities of entry-level health IT specialists in each phase of the health information management systems lifecycle. ",
 			"location":"Bellevue, WA",
