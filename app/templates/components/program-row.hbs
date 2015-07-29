@@ -1,10 +1,11 @@
 <li class="list-group-item">
 	<div class="row">
 		<div class="col-md-1">
-			<img src={{program.branchImage}} alt={{program.branch}} width=75>
+			{{#link-to 'programs' class="btn btn-primary" role="button"}}<i class="fa fa-list-alt"></i>More Info{{/link-to}}
 		</div>
 		<div class="col-md-11">
 			<strong>{{program.institution}} - {{program.program}}</strong><br>
+			{{program.degree_cert}}<br>
 			<small>{{program.location}}. ({{program.instruction_delivery}})</small><br>
 			<small>Duration: {{program.duration}}</small><br>
 			<small>Cost: {{program.cost}}</small>
