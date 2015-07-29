@@ -1,7 +1,7 @@
 <li class="list-group-item">
 	<div class="row">
 		<div class="col-md-1">
-			{{#link-to 'programs' class="btn btn-primary" role="button"}}{{fa-icon "fa-list-alt" size="lg"}}<br><small>Details</small>{{/link-to}}
+			{{#link-to 'programs.program' program.id class="btn btn-primary" role="button"}}{{fa-icon "fa-list-alt" size="lg"}}<br><small>Details</small>{{/link-to}}
 		</div>
 		<div class="col-md-11">
 			<strong>{{#link-to 'programs.program' program.id}}{{program.institution}} - {{program.program}}{{/link-to}}</strong><br>

@@ -1,2 +1,55 @@
-{{outlet}}
-THIS IS HERE
+<ol class="breadcrumb">
+  <li>{{#link-to 'programs'}}Inventory{{/link-to}}</li>
+  <li class="active">{{model.institution}} - {{model.program}}</li>
+</ol>
+<h2>Program Information</h2>
+<div class="table-responsive">
+	<table class="table">
+		<tbody>
+			<tr>
+				<td>School</td>
+				<td>{{model.institution}}</td>
+			</tr>
+			<tr>
+				<td>Program</td>
+				<td>{{model.program}}</td>
+			</tr>
+			<tr>
+				<td>Degree Type</td>
+				<td>{{model.degree_cert}}</td>
+			</tr>
+			<tr>
+				<td>Type</td>
+				<td>{{model.instruction_delivery}}</td>
+			</tr>
+			<tr>
+				<td>Location</td>
+				<td>{{model.location}}</td>
+			</tr>
+			<tr>
+				<td>Duration</td>
+				<td>{{model.duration}}</td>
+			</tr>
+			<tr>
+				<td>Cost</td>
+				<td>{{model.cost}}</td>
+			</tr>
+			<tr>
+				<td>Prerequisites</td>
+				<td>{{model.prerequisites}}</td>
+			</tr>
+			<tr>
+				<td>Outcomes</td>
+				<td>{{model.outcomes}}</td>
+			</tr>
+			<tr>
+				<td>Accreditation</td>
+				<td>{{model.accreditation}}</td>
+			</tr>
+			<tr>
+				<td>Contact</td>
+				<td>{{model.contact}}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
