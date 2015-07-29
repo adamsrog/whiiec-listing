@@ -1,4 +1,3 @@
-{{outlet}}
 {{#each model as |program|}}
-	{{program.institution}} - {{program.program}}<br>
+	{{program-row program=program}}
 {{/each}}
