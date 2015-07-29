@@ -11,6 +11,7 @@ Router.map(function() {
     this.route("crosswalk");
   });
   this.route('programs');
+  this.route('faq');
 });
 
 export default Router;
