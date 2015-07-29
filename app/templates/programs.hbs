@@ -1,2 +1,4 @@
 {{outlet}}
-stuff
+{{#each model as |program|}}
+	{{program.institution}} - {{program.program}}<br>
+{{/each}}
