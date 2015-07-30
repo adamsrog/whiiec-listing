@@ -30,10 +30,12 @@
   <div class="col-md-2">
     <hr style="margin-top: 0px">
     <h5>
-      <span>Schools</span>
+      <h3>Schools</h3>
       {{#if sortCategories}}<button class="pull-right" {{action "clearCategories"}}>x</button>{{/if}}
     </h5>
-    Schools here..
+    {{#each schoolList as |school|}}
+      {{school}}<br>
+    {{/each}}
   </div>
   <div class="col-md-10">
     <ul class="list-group">

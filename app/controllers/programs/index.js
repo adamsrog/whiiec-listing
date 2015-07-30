@@ -15,8 +15,19 @@ export default Ember.Controller.extend({
 				if (item.get('program').toLowerCase().indexOf(query.toLowerCase()) > -1) { return true; }
 			});
 		}
-
 		return programs;
+	}),
+
+	schoolList: Ember.computed('model.content', function() {
+		var schools = [];
+		var programs = this.get('model');
+		
+		programs.forEach(function(program) {
+			if (schools.indexOf(program.get('institution')) === -1) {
+				schools.push(program.get('institution'));
+			}
+		});
+		return schools;
 	}),
 
 	pagedContent: pagedArray('sortedPrograms', { 
@@ -24,6 +35,6 @@ export default Ember.Controller.extend({
 		perPageBinding: 'perPage'
 	}),
 	page: 1,
-	perPage: 10
+	perPage: 15
 	
 });
