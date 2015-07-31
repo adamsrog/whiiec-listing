@@ -5,8 +5,9 @@
 		</div>
 		<div class="col-md-11">
 			<strong>{{#link-to 'programs.program' program.id}}{{program.institution}} - {{program.program}}{{/link-to}}</strong><br>
-			{{program.degree_cert}}<br>
-			<small>{{program.location}}. ({{program.instruction_delivery}})</small><br>
+			<small>Degree Type: {{program.degree_cert}}</small><br>
+			<small>Campus Location: {{program.location}}</small><br>
+			<small>Delivery Type: {{program.instruction_delivery}}</small><br>
 			<small>Duration: {{program.duration}}</small><br>
 			<small>Cost: {{program.cost}}</small>
 		</div>
