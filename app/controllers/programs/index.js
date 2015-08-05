@@ -19,16 +19,27 @@ export default Ember.Controller.extend({
 	}),
 
 	schoolList: Ember.computed('model.content', function() {
+		var controller = this;
 		var schools = [];
+		var schoolObjects = [];
 		var programs = this.get('model');
 		
+		// create an array containing school names and controller properties for the checkboxes
 		programs.forEach(function(program) {
-			if (schools.indexOf(program.get('institution')) === -1) {
-				schools.push(program.get('institution'));
+			var institution = {
+				name: program.get('institution'),
+				isSelected: false
+			};
+			console.log('institution', institution, ' -- ', schools.contains(institution.name));
+			if (schools.indexOf(institution.name) === -1) {
+				schools.push(institution.name);
+				schoolObjects.push(institution);
 			}
 		});
-		return schools;
+		return schoolObjects;
 	}),
+
+	selectedSchools: [],
 
 	pagedContent: pagedArray('sortedPrograms', { 
 		pageBinding: 'page', 

@@ -33,9 +33,12 @@
       <h3>Schools</h3>
       {{#if sortCategories}}<button class="pull-right" {{action "clearCategories"}}>x</button>{{/if}}
     </h5>
-    {{#each schoolList as |school|}}
-      {{school}}<br>
-    {{/each}}
+    {{#multiselect-checkboxes options=schoolList labelProperty='name' selection=selectedSchools as |label isSelected|}}
+      {{input type="checkbox" checked=isSelected}} {{label}}<br>
+    {{/multiselect-checkboxes}}
+    {{!-- {{#each schoolList as |school|}}
+      {{input type="checkbox" checked=school}} {{school}}<br>
+    {{/each}} --}}
   </div>
   <div class="col-md-10">
     <ul class="list-group">

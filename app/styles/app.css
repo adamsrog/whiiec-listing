@@ -31,3 +31,7 @@ body {
 .is-high {
   background-color: #468966;
 }
+
+ul {
+  -webkit-padding-start: 0px;
+}
