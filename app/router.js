@@ -14,6 +14,7 @@ Router.map(function() {
   	this.route('program', { path: '/:id' });
   });
   this.route('faq');
+  this.route('login');
 });
 
 export default Router;

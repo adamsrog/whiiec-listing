@@ -15,6 +15,9 @@
       <ul class="nav navbar-nav">
         <li>{{#link-to 'programs' class="btn-view-occupation"}}View Inventory{{/link-to}}</li>
         <li>{{#link-to 'faq'}}FAQ{{/link-to}}</li>
+        {{#if session.isAuthenticated}}
+        <li class="pull-right"><a {{action 'logout'}}>Logout</a></li>
+        {{/if}}
       </ul>
     </div>{{!-- /.navbar-collapse --}}
 
