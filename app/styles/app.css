@@ -35,3 +35,11 @@ body {
 ul {
   -webkit-padding-start: 0px;
 }
+
+.school-item {
+
+}
+
+.navbar-nav .active {
+  font-weight: bold;
+}

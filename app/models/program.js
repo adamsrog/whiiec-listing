@@ -2060,7 +2060,7 @@ Program.reopenClass({
 			"accreditation":"Walden has been accredited by The Higher Learning Commission (HLC)"},
 		{
 			"id":137,
-			"institution":"Western Governors University Washington AKA WGU Washington",
+			"institution":"Western Governors University",
 			"institution_url":"http://washington.wgu.edu/",
 			"program":"BS in Health Informatics",
 			"program_url":"http://washington.wgu.edu/online_it_degrees/health_informatics_degree",
