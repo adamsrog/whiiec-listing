@@ -33,7 +33,7 @@ export default Ember.Controller.extend({
 		return programs;
 	}),
 
-	schoolList: Ember.computed('model.content', function() {
+	schoolList: Ember.computed('model.content.length', function() {
 		var schools = [];
 		var schoolObjects = [];
 		var programs = this.get('model');
