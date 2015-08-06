@@ -34,7 +34,6 @@ export default Ember.Controller.extend({
 	}),
 
 	schoolList: Ember.computed('model.content', function() {
-		var controller = this;
 		var schools = [];
 		var schoolObjects = [];
 		var programs = this.get('model');
