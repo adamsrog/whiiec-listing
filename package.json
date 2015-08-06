@@ -35,6 +35,8 @@
     "ember-cli-pagination": "0.6.6",
     "ember-cli-qunit": "0.3.18",
     "ember-cli-release": "0.2.3",
+    "ember-cli-simple-auth": "0.8.0",
+    "ember-cli-simple-auth-firebase": "1.0.5",
     "ember-cli-spinkit": "0.0.5",
     "ember-cli-sri": "^1.0.1",
     "ember-cli-uglify": "^1.0.1",
