@@ -12,6 +12,12 @@
 			<label for="">Password</label>
 			{{input type="password" value=password class="form-control"}}
 		</div>
-		<button class="btn btn-primary" type="submit">Login</button>
+		<button class="btn btn-primary" type="submit">Login</button><br>
 	</form>
+	{{#if errorMessage}}
+	<hr>
+	<div class="well well-sm">
+		<span>{{errorMessage}}</span>
+	</div>
+	{{/if}}
 {{/if}}

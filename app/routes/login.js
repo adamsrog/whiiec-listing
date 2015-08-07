@@ -1,6 +1,7 @@
 import Ember from 'ember';
+import ApplicationRouteMixin from 'simple-auth/mixins/application-route-mixin';
 
-export default Ember.Route.extend({
+export default Ember.Route.extend(ApplicationRouteMixin, {
 	actions: {
 		login: function() {
 			var credentials = {
@@ -16,6 +17,10 @@ export default Ember.Route.extend({
 			this.get('session').invalidate().then(function() {
 				this.transitionToRoute('index');
 			});
+		},
+
+		sessionAuthenticationFailed: function(error) {
+			this.controllerFor('login').set('errorMessage', error.message);
 		}
 	}
 });
