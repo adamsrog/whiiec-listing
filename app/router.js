@@ -7,9 +7,6 @@ var Router = Ember.Router.extend(googlePageView, {
 });
 
 Router.map(function() {
-  this.resource("pla", function() {
-    this.route("crosswalk");
-  });
   this.route('programs', function() {
   	this.route('program', { path: '/:id' });
   });
