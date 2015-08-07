@@ -1,0 +1,57 @@
+<ol class="breadcrumb">
+  <li>{{#link-to 'application'}}Home{{/link-to}}</li>
+  <li>{{#link-to 'programs'}}Inventory{{/link-to}}</li>
+  <li class="active">New Program</li>
+</ol>
+<h2>New Program Information</h2>
+<form>
+	<div class="table-responsive">
+		<table class="table table-striped">
+			<tbody>
+				<tr>
+					<td>School Name<br>{{input value=model.institution class="form-control"}}</td>
+				</tr>
+				<tr>
+					<td>School URL<br>{{input value=model.institution_url class="form-control"}}</td>
+				</tr>
+				<tr>
+					<td>Program<br>{{input value=model.program class="form-control"}}</td>
+				</tr>
+				<tr>
+					<td>Program URL<br>{{input value=model.program_url class="form-control"}}</td>
+				</tr>
+				<tr>
+					<td>Degree Type<br>{{input value=model.degree_cert class="form-control"}}</td>
+				</tr>
+				<tr>
+					<td>Delivery Mode<br>{{input value=model.instruction_delivery class="form-control"}}</td>
+				</tr>
+				<tr>
+					<td>Main Campus Location<br>{{input value=model.location class="form-control"}}</td>
+				</tr>
+				<tr>
+					<td>Duration<br>{{input value=model.duration class="form-control"}}</td>
+				</tr>
+				<tr>
+					<td>Cost<br>{{input value=model.cost class="form-control"}}</td>
+				</tr>
+				<tr>
+					<td>Prerequisites<br>{{textarea value=model.prerequisites class="form-control"}}</td>
+				</tr>
+				<tr>
+					<td>Outcomes<br>{{textarea value=model.outcomes class="form-control"}}</td>
+				</tr>
+				<tr>
+					<td>Accreditation<br>{{textarea value=model.accreditation class="form-control"}}</td>
+				</tr>
+				<tr>
+					<td>Contact<br>{{textarea value=model.contact class="form-control"}}</td>
+				</tr>
+			</tbody>
+		</table>
+		<div>
+			<button class="btn btn-primary" {{action 'create' model}}>Create Program</button>
+			<button class="btn btn-danger" {{action 'cancel' model}}>Cancel</button>
+		</div>
+	</div>
+</form>

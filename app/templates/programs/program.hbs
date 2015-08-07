@@ -3,7 +3,18 @@
   <li>{{#link-to 'programs'}}Inventory{{/link-to}}</li>
   <li class="active">{{model.institution}} - {{model.program}}</li>
 </ol>
-<h2>Program Information</h2>
+<h2>
+	Program Information
+	{{#if session.isAuthenticated}}
+	<span class="pull-right">
+		{{#link-to 'programs.edit' model.id}}
+		<button type="button" class="btn btn-primary">
+			<i class="glyphicon glyphicon-edit"></i>
+		</button>
+		{{/link-to}}
+	</span>
+	{{/if}}
+</h2>
 <div class="table-responsive">
 	<table class="table table-striped">
 		<tbody>
