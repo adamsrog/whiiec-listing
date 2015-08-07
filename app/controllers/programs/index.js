@@ -4,7 +4,7 @@ import pagedArray from 'ember-cli-pagination/computed/paged-array';
 export default Ember.Controller.extend({
 	filterQuery: '',
 
-	sortedPrograms: Ember.computed('model.content', 'filterQuery', 'selectedSchools.length', function() {
+	sortedPrograms: Ember.computed('model.content', 'filterQuery', 'selectedSchools.length', 'model.content.length', function() {
 		var programs = this.get('model');
 		var query = this.get('filterQuery');
 		var schools = this.get('selectedSchools');
