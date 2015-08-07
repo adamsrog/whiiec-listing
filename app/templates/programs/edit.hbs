@@ -4,7 +4,14 @@
   <li>{{#link-to 'programs.program' model.id}}{{model.institution}} - {{model.program}}{{/link-to}}</li>
   <li class="active">Edit</li>
 </ol>
-<h2>Edit Program Information</h2>
+<h2>
+	Edit Program Information
+  <span class="pull-right">
+	  <button type="button" class="btn btn-danger" {{action 'deleteProgram' model}}>
+	    <i class="glyphicon glyphicon-remove"></i> Permanently Delete Program
+	  </button>
+	</span>
+</h2>
 <form>
 	<div class="table-responsive">
 		<table class="table table-striped">

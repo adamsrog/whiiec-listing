@@ -17,6 +17,12 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
 		cancelUpdate: function(program) {
 			program.rollbackAttributes();
 			this.transitionTo('programs.program', program.id);
+		},
+		deleteProgram: function(program) {
+			var route = this;
+			program.destroyRecord().then(function() {
+				route.transitionTo('programs.index');
+			});
 		}
 	}
 });
