@@ -14,7 +14,7 @@ var Program = DS.Model.extend({
 	location: DS.attr('string'),
 	contact: DS.attr('string'),
 	accreditation: DS.attr('string'),
-	last_updated: DS.attr('date')
+	last_updated: DS.attr('number')
 });
 
 export default Program;
