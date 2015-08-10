@@ -64,7 +64,7 @@
 			</tr>
 			<tr>
 				<td>Last Updated</td>
-				<td>{{model.last_updated}}</td>
+				<td>{{moment-format model.last_updated}} ({{moment-from-now model.last_updated}})</td>
 			</tr>
 		</tbody>
 	</table>
