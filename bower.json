@@ -16,6 +16,8 @@
     "qunit": "~1.17.1",
     "font-awesome": "~4.3.0",
     "firebase": "^2.1.0",
-    "ember-simple-auth": "0.8.0"
+    "ember-simple-auth": "0.8.0",
+    "moment": ">= 2.8.0",
+    "moment-timezone": ">= 0.1.0"
   }
 }
