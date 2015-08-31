@@ -1,7 +1,8 @@
 # WHIIEC Health IT Educational Listings
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Small web application for displaying Health IT educational programs from a data set curated by the WHIIEC. Uses Firebase as a backend to allow for editing by authenticated users.
+
+* [View Live Version at http://whiiec.hiteducation.org](http://whiiec.hiteducation.org)
 
 ## Prerequisites
 
