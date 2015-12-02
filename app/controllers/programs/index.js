@@ -14,7 +14,8 @@ export default Ember.Controller.extend({
 		// apply search query
 		if (query) {
 			programs = programs.filter(function(program) {
-				if (program.get('program').toLowerCase().indexOf(query.toLowerCase()) > -1) { return true; }
+				var fullname = program.get('institution') + ' ' + program.get('program');
+				if (fullname.toLowerCase().indexOf(query.toLowerCase()) > -1) { return true; }
 			});
 		}
 
