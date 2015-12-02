@@ -9,7 +9,7 @@
       {{#if session.isAuthenticated}}
       <span class="pull-right">
         {{#link-to 'programs.new'}}
-        <button type="button" class="btn btn-primary">
+        <button type="button" class="btn btn-primary btn-sm">
           <i class="glyphicon glyphicon-plus"></i>
         </button>
         {{/link-to}}
@@ -42,14 +42,16 @@
     <hr style="margin-top: 0px">
     <h3>
       Schools
+      {{#if selectedSchools}}
       <span class="pull-right">
-        <button type="button" class="btn btn-primary btn-sm" alt="Clear School selections" {{action 'clearFilterSchools'}}>
+        <button type="button" class="btn btn-default btn-sm" alt="Clear School selections" {{action 'clearFilterSchools'}}>
           <i class="glyphicon glyphicon-remove"></i>
         </button>
       </span>
+      {{/if}}
     </h3>
     {{#multiselect-checkboxes options=schoolList labelProperty='name' selection=selectedSchools as |label isSelected|}}
-      {{input type="checkbox" checked=isSelected}} <span class="school-item">{{label}}</span><br>
+      {{input type="checkbox" checked=isSelected}} <span class="school-item"><small>{{label}}</small></span><br>
     {{/multiselect-checkboxes}}
   </div>
   <div class="col-md-10">
