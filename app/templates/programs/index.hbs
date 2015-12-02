@@ -40,7 +40,14 @@
 <div class="row">
   <div class="col-md-2">
     <hr style="margin-top: 0px">
-    <h3>Schools</h3>
+    <h3>
+      Schools
+      <span class="pull-right">
+        <button type="button" class="btn btn-primary btn-sm" alt="Clear School selections" {{action 'clearFilterSchools'}}>
+          <i class="glyphicon glyphicon-remove"></i>
+        </button>
+      </span>
+    </h3>
     {{#multiselect-checkboxes options=schoolList labelProperty='name' selection=selectedSchools as |label isSelected|}}
       {{input type="checkbox" checked=isSelected}} <span class="school-item">{{label}}</span><br>
     {{/multiselect-checkboxes}}
