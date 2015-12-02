@@ -50,7 +50,6 @@ export default Ember.Controller.extend({
 				schoolObjects.push(institution);
 			}
 		});
-		console.log('schoolObjects', schoolObjects);
 		return schoolObjects.sortBy('name');
 	}),
 
