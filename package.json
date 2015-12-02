@@ -44,6 +44,6 @@
     "ember-multiselect-checkboxes": "0.4.0",
     "ember-simple-auth": "1.0.1",
     "ember-simple-auth-firebase": "0.0.3",
-    "emberfire": "1.5.0"
+    "emberfire": "1.6.2"
   }
 }
