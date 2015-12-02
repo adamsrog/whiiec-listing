@@ -22,9 +22,9 @@ module.exports = function(environment) {
       'style-src': "'self' 'unsafe-inline'",
       'report-uri': "'none'"
     },
-    // googleAnalytics: { 
-    //   webPropertyId: 'UA-59573010-1' 
-    // },
+    googleAnalytics: { 
+      webPropertyId: 'UA-70911733-1' 
+    },
 
     APP: {
       // Here you can pass flags/options to your application instance
