@@ -1,6 +1,6 @@
 {
   "name": "whiiec-listing",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Application for finding Health IT educational programs. Uses Firebase as a backend and can be updated by specific users.",
   "private": true,
   "directories": {

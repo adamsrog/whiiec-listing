@@ -1,6 +1,14 @@
 # WHIIEC Health IT Educational Listings
 
-Small web application for displaying Health IT educational programs from a data set curated by the WHIIEC. Uses Firebase as a backend to allow for editing by authenticated users.
+Web application for displaying Health IT educational programs from a data set curated by the WHIIEC. Uses Firebase as a backend to allow for editing by authenticated users.
+
+# .htaccess file for Apache
+```
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.html#$1 [L]
+```
 
 * [View Live Version at http://whiiec.hiteducation.org](http://whiiec.hiteducation.org)
 
