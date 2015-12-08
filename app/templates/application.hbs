@@ -2,7 +2,7 @@
   <div class="container">
 
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -11,7 +11,7 @@
       {{#link-to 'index' class="navbar-brand"}}WHIIEC Health IT Educational Inventory{{/link-to}}
     </div>
 
-    <div class="collapse navbar-collapse">
+    <div class="collapse navbar-collapse" id="navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li {{action 'viewInventory'}}>{{#link-to 'programs' class="btn-view-occupation"}}View Inventory{{/link-to}}</li>
         <li>{{#link-to 'faq'}}FAQ{{/link-to}}</li>
@@ -31,8 +31,8 @@
 <footer class="footer">
   <div class="container">
     <p class="text-muted">
-      Funded by the Department of Labor, Education and Training Administration, Grant #TC-23745-12-60-A-53.<br>
-      <small>This workforce solution was funded by a grant awarded by the U.S. Department of Labor's Employment and Training Administration.  The solution was created by the grantee and does not necessarily reflect the official position of the U.S. Department of Labor.  The Department of Labor makes no guarantees, warranties, or assurances of any kind, express or implied, with respect to such information, including any information on linked sites and including, but not limited to, accuracy of the information or its completeness, timeliness, usefulness, adequacy, continued availability, or ownership.  This solution is copyrighted by the institution that created it.  Internal use, by an organization and/or personal use by an individual for non-commercial purposes, is permissible.  All other uses require the prior authorization of the copyright owner. {{#link-to 'login'}}(admin){{/link-to}}</small>
+      Funded by the Department of Labor, Employment and Training Administration, Grant #TC-23745-12-60-A-53<br>
+      <small>This workforce solution is 100% funded by an $11.7m grant awarded by the U.S. Department of Labor's Employment and Training Administration.  The solution was created by the grantee and does not necessarily reflect the official position of the U.S. Department of Labor.  The Department of Labor makes no guarantees, warranties, or assurances of any kind, express or implied, with respect to such information, including any information on linked sites and including, but not limited to, accuracy of the information or its completeness, timeliness, usefulness, adequacy, continued availability or ownership. {{#link-to 'login'}}(admin){{/link-to}}</small>
     </p>
   </div>
 </footer>

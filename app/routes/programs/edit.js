@@ -8,6 +8,7 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
 	actions: {
 		updateProgramInformation: function(program) {
 			var route = this;
+			program.set('last_updated', new Date().getTime());
 			program.save().then(function() {
 				route.transitionTo('programs.program', program.id);
 			}, function() {

@@ -36,8 +36,12 @@ ul {
   -webkit-padding-start: 0px;
 }
 
-.school-item {
+.faq {
+  -webkit-padding-start: 40px;
+}
 
+.p-t-20 {
+  padding-top: 20px;
 }
 
 .navbar-nav .active {

@@ -13,7 +13,8 @@ var Program = DS.Model.extend({
 	outcomes: DS.attr('string'),
 	location: DS.attr('string'),
 	contact: DS.attr('string'),
-	accreditation: DS.attr('string')
+	accreditation: DS.attr('string'),
+	last_updated: DS.attr('number')
 });
 
 export default Program;
