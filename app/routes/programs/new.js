@@ -16,7 +16,8 @@ export default Ember.Route.extend(AuthenticatedRouteMixin, {
 			outcomes: '',
 			location: '',
 			contact: '',
-			accreditation: ''
+			accreditation: '',
+			last_updated: new Date().getTime()
 		});
 	},
 	actions: {
